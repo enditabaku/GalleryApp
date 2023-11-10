@@ -1,0 +1,104 @@
+
+.grid {
+    display: grid;
+    width: 114rem;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: start;
+  }
+  
+  .grid__item {
+    background-color: var(--dark-card);
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem var(--black);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .grid__item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem var(--black);
+  }
+  
+  .card__img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .card__content {
+    padding: 3rem 3rem;
+  }
+  
+  .card__header {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--loading-card);
+    margin-bottom: 1.5rem;
+  }
+  
+  .card__text {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: var(--light-text);
+    margin-bottom: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .card__btn {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 15px;
+    text-align: center;
+    color: var(--dark-card);
+    background-color: var(--main-yellow);
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    font-family: "Poppins-Medium";
+  }
+  
+  .card__btn span {
+    margin-left: 1rem;
+    transition: 0.2s;
+  }
+  
+  .card__btn:hover, .card__btn:active {
+    background-color: var(--light-blue);
+  }
+  
+  .grid__item.is-loading > .card > .image, .grid__item.is-loading  > .card >  .card__content > .card__text, .grid__item.is-loading  > .card >  .card__content > p, .grid__item.is-loading > .card >  .card__content > .card__btn {
+    background: #eee;
+    background: linear-gradient(110deg, var(--black) 8%, var(--loading-card) 18%, var(--black) 33%);
+    border-radius: 5px;
+    background-size: 200% 100%;
+    animation: 1.5s shine linear infinite;
+  }
+  
+  .grid__item.is-loading > .card  > .image {
+    height: 180px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .grid__item.is-loading > .card >  .card__content > .card__text {
+    height: 60px;
+  }
+  
+  .grid__item.is-loading > .card >  .card__content > .card__btn {
+    height: 55px;
+  }
+  
+  
+  @keyframes shine {
+    to {
+      background-position-x: -200%;
+    }
+  }
