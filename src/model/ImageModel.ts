@@ -32,6 +32,8 @@ export interface IImage {
   privacy: "hidden" | "public";
   views: number;
   link: string;
+  gifv: string;
+  type: string;
   ups: number;
   downs: number;
   points: number;
