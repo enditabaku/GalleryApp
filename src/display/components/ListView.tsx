@@ -1,5 +1,5 @@
 // react imports
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 // project imports
 import { useAppDispatch, useAppSelector } from "../../store/Hooks";
@@ -14,16 +14,19 @@ import './List.css';
 export const ListView = () => {
   const dispatch = useAppDispatch();
   const galleryValue = useAppSelector((state) => state.gallery);
+  const [paramsObject, setParamsObject] = useState<any>({});
 
   useEffect(() => {
-    dispatch(fetchGallery({ size: 20 }))
-  }, []);
+    dispatch(fetchGallery(paramsObject))
+  }, [paramsObject]);
 
-  console.log(galleryValue)
+  const filtersChangeHandler = (newValues: any) => {
+    setParamsObject(newValues)
+  }
 
   return (
     <>
-      <Filters />
+      <Filters onChange={filtersChangeHandler} />
       <div className="list">
         <div className="grid">
           {galleryValue.loading ? (

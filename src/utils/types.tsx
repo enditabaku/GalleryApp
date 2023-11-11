@@ -8,7 +8,7 @@ export interface GalleryUrlObjectTypes {
 	sort: 'viral' | 'top' | 'time',
 	window: 'day' | 'week' | 'month' | 'year' | 'all',
 	showViral: boolean,
-	page: number
+	page?: number
 }
 
 export interface OptionType {
