@@ -1,4 +1,4 @@
- // react imports
+// react imports
 import React, { useEffect } from "react";
 
 // project imports
@@ -29,14 +29,21 @@ const windowOptions: OptionType[] = [
     { value: 'all', label: 'All' }
 ]
 
-export default function Filters () {
+export default function Filters() {
     return (
         <>
-            <div>
-                <span>Show Virals</span>
-                <Select options={sectionOptions} />
-                <Select options={sortOptions} />
-                <Select options={windowOptions} />
+            <div className="row p-3">
+                <div className="col-3">
+                    <label className="container">Show Viral
+                        <input type="checkbox" />
+                        <span className="checkmark"></span>
+                    </label>
+                </div>
+                <div className="col-9 flex jc-flex_end select_list">
+                    <div><Select options={sectionOptions} /></div>
+                    <div><Select options={sortOptions} /></div>
+                    <div><Select options={windowOptions} /></div>
+                </div>
             </div>
         </>
     )

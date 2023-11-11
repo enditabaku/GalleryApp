@@ -94,6 +94,14 @@ body {
   background-color: var(--main-yellow);
 }
 
+.flex{
+  display: flex;
+}
+
+.jc-flex_end {
+  justify-content: flex-end;
+}
+
 .p-relative{
   position: relative;
 }
@@ -114,6 +122,10 @@ body {
   font-size: 45px;
 }
 
+.p-3{
+  padding: 3rem;
+}
+
 .large-text {
   margin: 10vw 0 10vw 8vw;
 }
@@ -127,13 +139,6 @@ body {
 
 .lightBg {
   background-color: var(--light-bg);
-}
-
-.list {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 3rem 6rem;
 }
 
 
