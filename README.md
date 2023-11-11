@@ -19,7 +19,7 @@
 
 ## Project Structure
 
-There are 6 important things you need to know about the project structure:
+There are 3 important things you need to know about the project structure:
 * main.tsx file 
 * package.json file
 * 7 main folders (assets, components, config, display, services, store and utils)  
