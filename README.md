@@ -17,7 +17,6 @@
 * https://vitejs.dev/
 * https://www.typescriptlang.org/
 
-<!---
 ## Project Structure
 
 There are 6 important things you need to know about the project structure:
@@ -46,5 +45,5 @@ It contains an object with the main project information, such as project name, p
                     the types used in the project
                     the constants used in the project
                     and the configuration file with client's data such as client's name and id
- --->
+
 ### Built with ❤ for a Coding Challenge by Endi Tabaku.
