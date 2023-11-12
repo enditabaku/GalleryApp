@@ -1,5 +1,5 @@
 // react imports
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 // project imports
 import { useAppDispatch, useAppSelector } from "../../store/Hooks";

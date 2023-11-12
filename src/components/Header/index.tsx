@@ -1,6 +1,3 @@
-// react imports
-import React from "react";
-
 // project imports
 import './Header.css';
 import logo from '../../assets/images/logo.png';

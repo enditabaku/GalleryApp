@@ -1,6 +1,3 @@
-// react imports
-import React from "react";
-
 // project imports
 import background from '../../assets/images/bg.png'
 import Header from "../Header";

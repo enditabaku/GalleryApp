@@ -20,7 +20,7 @@ export const galleryReducer = createSlice({
   reducers: {
   },
   extraReducers(builder) {
-      builder.addCase(fetchGallery.pending, (state, action) => {
+      builder.addCase(fetchGallery.pending, (state) => {
         state.loading = true
       })
       builder.addCase(fetchGallery.fulfilled, (state, action) => {

@@ -1,6 +1,3 @@
-// react imports
-import React from "react";
-
 // project imports
 import { ListView } from "./components/ListView";
 import Intro from "../components/Intro";

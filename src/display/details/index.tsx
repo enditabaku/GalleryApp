@@ -1,6 +1,3 @@
-// react imports
-import React from "react";
-
 // project imports
 import { IImageImages } from "../../model/ImageModel";
 import Header from "../../components/Header";
