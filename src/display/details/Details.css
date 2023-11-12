@@ -1,7 +1,23 @@
+.wrapper{
+    padding-top: 4vw;
+}
+.wrapper > h1 {
+    color: var(--light-text);
+}
+
 .p-3 {
-    padding: 3rem;
+    padding: 3rem 6rem;
 }
 
 .main_image_wrapper > img {
     width: 100%;
+}
+
+.details_text {
+    color: var(--white);
+    font-size: 20px;
+}
+
+.mt-2{
+    margin-top: 2rem;
 }

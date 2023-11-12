@@ -18,7 +18,7 @@ export default function Intro () {
                             the internet
                         </p>
                     </div>
-                    <div className="col-4 p-relative">
+                    <div className="col-4 p-relative bg-yellow">
                         <span className="small-text fs-12">Discover More</span>
                     </div>
                 </div>
