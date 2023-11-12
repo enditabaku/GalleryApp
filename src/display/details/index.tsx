@@ -20,7 +20,7 @@ export default function Details() {
             <div className="wrapper p-3">
                 <h1>{location?.state?.title}</h1>
                 <br />
-                <div className="row">
+                <div className="row details_row">
                     <div className="col-6">
                         <div className="main_image_wrapper">
                             <img src={location.state?.images?.length > 0 ? (location.state?.images[0]?.type == "video/mp4" ? location.state?.images[0].gifv.slice(0, -1) : location.state?.images[0].link) : (location.state?.type == "video/mp4" ? location.state.gifv.slice(0, -1) : location.state?.link)} alt={location.state?.title} />

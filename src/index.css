@@ -45,6 +45,7 @@
   --loading-card: #161616;
   --light-text: #808080;
   --light-blue: #B9CACF;
+  --error: rgb(216, 37, 37);
 }
 
 
@@ -144,6 +145,11 @@ body {
   background-color: var(--main-yellow);
 }
 
+.error_text {
+  font-size: 2vw;
+  color: var(--error)
+}
+
 
 @media (max-width: 60em) {
 
@@ -164,6 +170,35 @@ body {
     width: 100%;
     display: block;
     margin-bottom: 20px;
+  }
+
+  .fs-45{
+    font-size: 25px;
+  }
+
+  .p-3{
+    padding: 0;
+  }
+
+  .list{
+    padding: 2rem;
+  }
+
+  .select_list > div {
+    width: 35vw;
+  }
+
+  .grid__item{
+    width: 80vw;
+  }
+
+  .details_text {
+    font-size: 12px;
+  }
+  
+  .details_row {
+    display: block;
+    text-align: -webkit-center;
   }
 }
 

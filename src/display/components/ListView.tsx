@@ -27,6 +27,15 @@ export const ListView = () => {
     setParamsObject(newValues)
   }
 
+
+  if(galleryValue?.error?.length > 0){
+    return (
+    <div className="p-3 ta-center">
+      <span className="error_text">{galleryValue?.error}</span>
+    </div>
+    )
+  }
+
   return (
     <>
       <Filters onChange={filtersChangeHandler} />
@@ -34,15 +43,15 @@ export const ListView = () => {
         <div className="grid">
           {galleryValue.loading ? (
             <>
-              <LoadImage loading={true} />
-              <LoadImage loading={true} />
-              <LoadImage loading={true} />
-              <LoadImage loading={true} />
-              <LoadImage loading={true} />
-              <LoadImage loading={true} />
-              <LoadImage loading={true} />
-              <LoadImage loading={true} />
-              <LoadImage loading={true} />
+              <LoadImage />
+              <LoadImage />
+              <LoadImage />
+              <LoadImage />
+              <LoadImage />
+              <LoadImage />
+              <LoadImage />
+              <LoadImage />
+              <LoadImage />
             </>
           ) : (
             <>
